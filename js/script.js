@@ -32,9 +32,9 @@ async function GetUser() {
   }
 }
 
-user.addEventListener("keyup", function (e) {
+user.addEventListener("keyup", (e) => {
   e.preventDefault();
-  if (e.keyCode === 13) {
+  if (e.key === 13) {
     GetUser();
   }
 });
